@@ -1,0 +1,24 @@
+.full-screen-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.full-screen-container {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .full-screen-container {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full-screen-container {
+    max-width: calc(100% - 20px);
+  }
+}
+
